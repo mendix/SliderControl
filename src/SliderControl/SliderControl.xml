@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="SliderControl.widget.SliderControl" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>SliderControl</name>
+  <description>The description of this widget.</description>
+  <icon></icon>
+  <properties>
+        <property key="minRangeAttr" type="attribute" isPath="optional" pathType="reference" allowNonPersistableEntities="true">
+            <caption>Minimum range</caption>
+            <category>Appearance</category>
+            <description>Mininum value which can be selected in the range.</description>
+            <attributeTypes>
+                <attributeType name="Integer"/>
+                <attributeType name="Float"/>
+            </attributeTypes>
+        </property>
+        <property key="maxRangeAttr" type="attribute" isPath="optional" pathType="reference" allowNonPersistableEntities="true">
+            <caption>Maximum value</caption>
+            <category>Appearance</category>
+            <description>Maximum value which can be selected in the range.</description>
+            <attributeTypes>
+                <attributeType name="Integer"/>
+                <attributeType name="Float"/>
+            </attributeTypes>
+        </property>
+        <property key="stepRangeAttr" type="attribute" isPath="optional" pathType="reference" allowNonPersistableEntities="true">
+            <caption>Step value</caption>
+            <category>Appearance</category>
+            <description>Maximum value which can be selected in the range.</description>
+            <attributeTypes>
+                <attributeType name="Integer"/>
+                <attributeType name="Float"/>
+            </attributeTypes>
+        </property>
+        <property key="targetAttr" type="attribute">
+            <caption>Attribute</caption>
+            <category>Appearance</category>
+            <description>Attribute where value is set.</description>
+            <attributeTypes>
+                <attributeType name="Integer"/>
+                <attributeType name="Float"/>
+            </attributeTypes>
+        </property>
+        <property key="sliderMarks" type="boolean" defaultValue="false">
+            <caption>Enable slider marks</caption>
+            <category>Appearance</category>
+            <description>Adds graduation marks to the slider</description>
+        </property>
+        <property key="mfToExecute" type="microflow" required="false" defaultValue="">
+            <caption>On change</caption>
+            <category>Behavior</category>
+            <description>The microflow to execute on change.</description>
+            <returnType type="Boolean"></returnType>
+        </property>
+	</properties>
+</widget>
+
