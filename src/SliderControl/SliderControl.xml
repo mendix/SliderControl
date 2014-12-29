@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="SliderControl.widget.SliderControl" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+<widget id="SliderControl.widget.SliderControl" needsEntityContext="true"  xmlns="http://www.mendix.com/widget/1.0/">
   <name>SliderControl</name>
   <description>The description of this widget.</description>
   <icon></icon>

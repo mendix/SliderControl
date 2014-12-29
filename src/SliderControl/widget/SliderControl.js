@@ -131,10 +131,10 @@
                     // Subscribe to object updates.
                     this._handle = mx.data.subscribe({
                         guid: this._contextObj.getGuid(),
-                        callback: lang.hitch(this, function(obj){
+                        callback: lang.hitch(this, function(guid){
 
                             mx.data.get({
-                                guids: [obj],
+                                guid: guid,
                                 callback: lang.hitch(this, function (objs) {
 
                                     // Set the object as background.
@@ -166,7 +166,6 @@
                 this._wgtNode = this.domNode;
 
                 domAttr.set(this._wgtNode, 'list', this._wgtNode.id +'_optionlist');
-                
             },
 
             // Attach events to newly created nodes.
@@ -176,8 +175,6 @@
 
                 on(this.domNode, 'change', lang.hitch(this, function () {
                     
-                    
-                    console.log(this._contextObj.getGuid());
                     this._contextObj.set(this.targetAttr,domAttr.get(this._wgtNode,'value'));
                     
                     mx.data.action({
